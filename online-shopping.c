@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main() {
+    int deliveryMode;
+    int charge = 0;
+    scanf("%d", &deliveryMode);
+    switch (deliveryMode) {
+        case 1:  
+            charge = 40;
+            break;
+
+        case 2:  
+            charge = 120;
+            break;
+
+        case 3:  
+            charge = 0;
+            break;
+
+        default:
+            return 0;
+    }
+
+    printf("Delivery Charge %d", charge);
+
+    return 0;
+}
